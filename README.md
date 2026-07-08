@@ -2,6 +2,9 @@
 
 📊 Credit Risk & Loan Default Analysis (SQL)
 
+<img width="886" height="615" alt="Join_data" src="https://github.com/user-attachments/assets/63c34a04-513b-429a-9c36-43a77a7f98d2" />
+
+
 📌 Project Overview
 
 This project demonstrates how SQL can be used to analyze loan applications, assess credit risk, and generate business insights that support lending decisions.
