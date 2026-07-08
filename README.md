@@ -22,7 +22,6 @@ The objective of this project is to use SQL to:
 
 •	Identify characteristics of approved and rejected loans
 
-
 •	Evaluate the relationship between income, loan amount, missed payments and credit score
 
 •	Support better lending decisions through data-driven insights
@@ -114,9 +113,29 @@ Applicants with higher credit scores were significantly more likely to receive l
 ________________________________________
 
 Income Analysis
+
 Higher-income applicants generally qualified for larger loan amounts and demonstrated stronger approval outcomes.
 
 ________________________________________
+
+Missed Payment Analysis
+
+Missed Payments increase default risk. Borrowers with four or more missed repayments are significantly less likely to receive loan approval
+
+________________________________________
+
+Loan to Income Ratio Analysis
+
+Customers with larger loans relative to their income have less financial flexibility and are less likely to receive loan approval.
+
+________________________________________ 
+
+Multiple Indicators Analysis
+
+Combining multiple indicators such as Credit Score, Missed Payments, Income, Loan Amount provides a much more reliable assessment of borrower risk and aids decision either to approve or not approve the loan.
+
+________________________________________
+
 
 <img width="1477" height="562" alt="Screenshot SQL Query Key Insight" src="https://github.com/user-attachments/assets/ded30eb7-ec67-43e7-8a96-0def424c30b6" />
 
