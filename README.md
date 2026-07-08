@@ -23,7 +23,7 @@ The objective of this project is to use SQL to:
 •	Identify characteristics of approved and rejected loans
 
 
-•	Evaluate the relationship between income, employment, experience, and credit score
+•	Evaluate the relationship between income, loan amount, missed payments and credit score
 
 •	Support better lending decisions through data-driven insights
 
@@ -71,17 +71,7 @@ The project includes SQL queries for:
 
 •	Credit Score Analysis
 
-•	Loan Approval by Age
-
-•	Loan Approval by Employment Type
-
-•	Loan Approval by City
-
-•	Loan Approval by Years of Experience
-
 •	Income vs Loan Amount Analysis
-
-•	Customer Demographics
 
 •	Aggregate Functions
 
