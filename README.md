@@ -208,7 +208,7 @@ Data Analyst with hands-on experience in SQL, Python, Microsoft Power BI, Micros
 
 Connect with Me
 
-•	LinkedIn: 
+•	LinkedIn: https://www.linkedin.com/in/dayo-afariogun 
 
 •	GitHub: https://github.com/dayo-data-analyst
 
