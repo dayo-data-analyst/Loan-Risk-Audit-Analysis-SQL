@@ -75,7 +75,7 @@ Contains lending information including:
 - Credit Score
 - Missed Payments
 
-The datasets are linked using **Customer_ID**, providing a complete borrower profile for credit risk analysis. :contentReference[oaicite:1]{index=1}
+The datasets are linked using **Customer_ID**, providing a complete borrower profile for credit risk analysis.
 
 ---
 
@@ -140,7 +140,7 @@ Used an **INNER JOIN** to combine customer income with loan performance, creatin
 
 **Business Value**
 
-Combining customer demographics with lending information provides the foundation for meaningful credit risk analysis. :contentReference[oaicite:2]{index=2}
+Combining customer demographics with lending information provides the foundation for meaningful credit risk analysis.
 
 ---
 
@@ -153,7 +153,7 @@ Implemented reusable CTEs to improve:
 - Query scalability
 - Future development
 
-This approach reflects SQL best practices commonly used in enterprise data environments. :contentReference[oaicite:3]{index=3}
+This approach reflects SQL best practices commonly used in enterprise data environments.
 
 ---
 
@@ -174,7 +174,7 @@ Classification was based on:
 
 using SQL CASE statements.
 
-This enables lenders to prioritise portfolio reviews based on risk severity. :contentReference[oaicite:4]{index=4}
+This enables lenders to prioritise portfolio reviews based on risk severity.
 
 ---
 
@@ -186,7 +186,7 @@ Calculated:
 
 This metric measures a customer's repayment capacity by comparing loan exposure to annual income.
 
-Higher ratios indicate greater financial strain and increased probability of default. :contentReference[oaicite:5]{index=5}
+Higher ratios indicate greater financial strain and increased probability of default.
 
 ---
 
@@ -229,7 +229,7 @@ Customers with four or more missed repayments are considerably more likely to be
 
 ### Business Insight
 
-Historical repayment behaviour is one of the most reliable indicators of future default. :contentReference[oaicite:6]{index=6}
+Historical repayment behaviour is one of the most reliable indicators of future default.
 
 ---
 
@@ -246,7 +246,7 @@ These customers are more vulnerable to:
 - Income shocks
 - Unexpected financial expenses
 
-Higher Loan-to-Income ratios therefore indicate elevated credit risk. :contentReference[oaicite:7]{index=7}
+Higher Loan-to-Income ratios therefore indicate elevated credit risk.
 
 ---
 
@@ -261,7 +261,7 @@ Combining:
 
 produces a significantly more reliable assessment than relying on a single metric.
 
-This mirrors modern credit risk frameworks used by financial institutions. :contentReference[oaicite:8]{index=8}
+This mirrors modern credit risk frameworks used by financial institutions.
 
 ---
 
@@ -315,7 +315,7 @@ The combined effect is lower profitability.
 
 ## Cash Flow
 
-Poor repayment behaviour reduces operating cash inflows and increases collection costs, negatively affecting liquidity. :contentReference[oaicite:9]{index=9}
+Poor repayment behaviour reduces operating cash inflows and increases collection costs, negatively affecting liquidity.
 
 ---
 
@@ -330,7 +330,7 @@ The analysis also supports Internal Audit by enabling auditors to:
 - Evaluate overdue loan monitoring
 - Strengthen internal control systems
 
-This demonstrates how SQL analytics contributes beyond reporting to governance and risk assurance. :contentReference[oaicite:10]{index=10}
+This demonstrates how SQL analytics contributes beyond reporting to governance and risk assurance.
 
 ---
 
@@ -350,7 +350,7 @@ Based on the analysis:
 
 ✔ Expand future work using predictive machine learning models
 
-These recommendations help lenders reduce default risk while improving portfolio resilience. :contentReference[oaicite:11]{index=11}
+These recommendations help lenders reduce default risk while improving portfolio resilience.
 
 ---
 
@@ -410,8 +410,7 @@ Potential future developments include:
 Loan-Risk-Audit-Analysis-SQL
 │
 ├── Dataset
-├── SQL Scripts
-├── Query Results
+├── SQL Script
 ├── Project Report
 ├── Screenshots
 └── README.md
