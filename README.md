@@ -1,91 +1,194 @@
-# Loan-Risk-Audit-Analysis-SQL
+# 🏦 Loan Risk & Audit Analysis Using SQL
 
-📊 Credit Risk & Loan Default Analysis (SQL)
+### SQL | Banking Analytics | Credit Risk | Audit Analytics | Financial Intelligence
 
 <img width="886" height="615" alt="Join_data" src="https://github.com/user-attachments/assets/63c34a04-513b-429a-9c36-43a77a7f98d2" />
 
+---
 
-📌 Project Overview
+# 📌 Executive Summary
 
-This project demonstrates how SQL can be used to analyze loan applications, assess credit risk, and generate business insights that support lending decisions.
-The analysis focuses on identifying factors influencing loan approval, evaluating customer creditworthiness, and discovering trends that financial institutions can use to reduce default risk while improving loan portfolio quality.
-This project forms part of my Data Analytics portfolio and showcases practical SQL skills for real-world financial data analysis.
+Financial institutions rely on accurate credit risk assessment to protect profitability, maintain healthy loan portfolios, and comply with regulatory requirements.
 
-___________________________________
+This project demonstrates how SQL can be used to analyse banking data, identify high-risk borrowers, and support audit and lending decisions through data-driven insights.
 
-🎯 Business Problem
+Using customer and loan datasets, I developed reusable SQL queries that combine borrower information, classify customers by credit risk, calculate financial ratios, and highlight potential loan defaults.
 
-Financial institutions receive thousands of loan applications, making it difficult to quickly identify high-risk applicants.
+Beyond technical implementation, this project applies accounting principles and audit thinking to explain how deteriorating loan quality impacts a bank's balance sheet, profitability, liquidity, and Expected Credit Loss (ECL) provisions.
 
-The objective of this project is to use SQL to:
+The project demonstrates practical SQL programming, financial analytics, business analysis, and executive-level data storytelling.
 
-•	Analyze loan approval patterns
+---
 
-•	Assess customer credit risk
+# 🎯 Business Problem
 
-•	Identify characteristics of approved and rejected loans
+Banks issue thousands of loans every year.
 
-•	Evaluate the relationship between income, loan amount, missed payments and credit score
+Without effective portfolio monitoring, financial institutions face challenges such as:
 
-•	Support better lending decisions through data-driven insights
+- Rising loan defaults
+- Increasing credit losses
+- Poor lending decisions
+- Weak portfolio quality
+- Reduced profitability
+- Regulatory compliance risks
 
-________________________________________
+Management therefore requires an analytical solution capable of identifying high-risk borrowers before loans become non-performing assets.
 
-📂 Dataset
+This project demonstrates how SQL analytics can support proactive lending decisions and strengthen internal audit processes.
 
-The dataset contains 5,000 loan applications with customer demographic and financial information.
+---
 
-Key Fields
+# 🎯 Project Objectives
 
-•	Customer ID
+The primary objectives of this project were to:
 
-•	Annual Income
+- Integrate customer and loan datasets
+- Identify borrowers with elevated default risk
+- Develop reusable SQL queries using Common Table Expressions (CTEs)
+- Classify borrowers into High, Medium, and Low Risk categories
+- Calculate Loan-to-Income ratios
+- Produce actionable business insights for lending decisions
+- Explain the accounting and audit implications of loan defaults
 
-•	Credit Score
+These objectives were achieved using advanced SQL techniques and financial analysis. :contentReference[oaicite:0]{index=0}
 
-•	Missed Payments
+---
 
-•	Loan Amount
+# 📂 Dataset Overview
 
-________________________________________
+The project combines two related banking datasets.
 
-🛠 Tools Used
+## Customer Dataset
 
-•	SQL (Data Extraction & Analysis)
+Contains borrower information including:
 
-•	Microsoft SQL Server
+- Customer ID
+- Annual Income
 
-•	GitHub
+## Loan Dataset
 
-________________________________________
+Contains lending information including:
 
-📈 SQL Analysis Performed
+- Customer ID
+- Loan Amount
+- Credit Score
+- Missed Payments
 
-The project includes SQL queries for:
+The datasets are linked using **Customer_ID**, providing a complete borrower profile for credit risk analysis. :contentReference[oaicite:1]{index=1}
 
-•	Total Loan Requests
+---
 
-•	Total Loans Approved
+# 🛠️ Technologies Used
 
-•	Total Loans Rejected
+| Technology | Purpose |
+|------------|----------|
+| SQL | Data Extraction & Analysis |
+| SQL Server | Database Management |
+| Microsoft Excel | Result Validation & Reporting |
+| INNER JOIN | Dataset Integration |
+| Common Table Expressions (CTEs) | Query Optimisation |
+| CASE Statements | Risk Classification |
+| Aggregate Functions | Portfolio Analysis |
+| GROUP BY | Customer Segmentation |
+| ORDER BY | Risk Prioritisation |
 
-•	Approval Rate Calculation
+---
 
-•	Credit Score Analysis
+# 🔄 Analytical Workflow
 
-•	Income vs Loan Amount Analysis
+```text
+Customer Dataset
+          │
+          ▼
+Loan Dataset
+          │
+          ▼
+INNER JOIN
+          │
+          ▼
+Reusable CTE
+          │
+          ▼
+Risk Classification
+          │
+          ▼
+Loan-to-Income Ratio
+          │
+          ▼
+Portfolio Risk Assessment
+          │
+          ▼
+Business & Audit Recommendations
+```
 
-•	Aggregate Functions
+---
 
-•	GROUP BY Analysis
+# 🧠 SQL Methodology
 
-•	Filtering and Sorting
+The project follows a structured analytical workflow.
 
-•	CASE Statements
+### 1️⃣ Data Exploration
 
-•	Ranking Queries
+Reviewed both banking datasets to understand available variables and validate data quality.
 
-________________________________________
+---
+
+### 2️⃣ Dataset Integration
+
+Used an **INNER JOIN** to combine customer income with loan performance, creating a comprehensive borrower profile.
+
+**Business Value**
+
+Combining customer demographics with lending information provides the foundation for meaningful credit risk analysis. :contentReference[oaicite:2]{index=2}
+
+---
+
+### 3️⃣ Common Table Expressions (CTEs)
+
+Implemented reusable CTEs to improve:
+
+- Readability
+- Maintainability
+- Query scalability
+- Future development
+
+This approach reflects SQL best practices commonly used in enterprise data environments. :contentReference[oaicite:3]{index=3}
+
+---
+
+### 4️⃣ Risk Classification
+
+Borrowers were classified into:
+
+🟥 High Risk
+
+🟨 Medium Risk
+
+🟩 Low Risk
+
+Classification was based on:
+
+- Credit Score
+- Missed Payments
+
+using SQL CASE statements.
+
+This enables lenders to prioritise portfolio reviews based on risk severity. :contentReference[oaicite:4]{index=4}
+
+---
+
+### 5️⃣ Financial Ratio Analysis
+
+Calculated:
+
+**Loan-to-Income Ratio**
+
+This metric measures a customer's repayment capacity by comparing loan exposure to annual income.
+
+Higher ratios indicate greater financial strain and increased probability of default. :contentReference[oaicite:5]{index=5}
+
+---
 
 <img width="886" height="615" alt="Screenshoot SQL Loan Risk" src="https://github.com/user-attachments/assets/006a2636-2590-4fb1-bb8b-0af5c7438a21" />
 
@@ -95,128 +198,245 @@ ________________________________________
 
 <img width="1176" height="563" alt="Screenshot SQL Query Risk CASE Group By" src="https://github.com/user-attachments/assets/763a8b65-451e-43eb-9dd9-3d17e6134bf3" />
 
-📊 Key Insights
+# ❓ Business Questions Answered
 
-Loan Approval
+The analysis answers several important banking questions:
 
-•	Total Loan Applications: 5,000
+- Which customers are most likely to default?
+- How strongly does credit score influence loan risk?
+- Which borrowers have excessive debt burdens?
+- Which customers require closer monitoring?
+- How can lenders improve approval decisions?
+- How can auditors prioritise high-risk accounts?
 
-•	Loans Approved: 1,151
+---
 
-•	Loans Rejected: 3,849
+# 🔍 Key Insights
 
-•	Overall Approval Rate: 23%
+## 💳 Credit Score
 
-________________________________________
+Borrowers with lower credit scores consistently demonstrate significantly higher credit risk.
 
-Credit Score
+### Business Insight
 
-Applicants with higher credit scores were significantly more likely to receive loan approval, highlighting credit score as one of the strongest predictors of lending decisions.
+Credit score remains one of the strongest predictors of future loan performance.
 
-________________________________________
+---
 
-Income Analysis
+## ⚠️ Missed Payments
 
-Higher-income applicants generally qualified for larger loan amounts and demonstrated stronger approval outcomes.
+Customers with four or more missed repayments are considerably more likely to become non-performing borrowers.
 
-________________________________________
+### Business Insight
 
-Missed Payment Analysis
+Historical repayment behaviour is one of the most reliable indicators of future default. :contentReference[oaicite:6]{index=6}
 
-Missed Payments increase default risk. Borrowers with four or more missed repayments are significantly less likely to receive loan approval
+---
 
-________________________________________
+## 💰 Loan-to-Income Ratio
 
-Loan to Income Ratio Analysis
+Borrowers with larger loan balances relative to income experience greater financial pressure.
 
-Customers with larger loans relative to their income have less financial flexibility and are less likely to receive loan approval.
+### Business Insight
 
-________________________________________ 
+These customers are more vulnerable to:
 
-Multiple Indicators Analysis
+- Interest rate increases
+- Inflation
+- Income shocks
+- Unexpected financial expenses
 
-Combining multiple indicators such as Credit Score, Missed Payments, Income, Loan Amount provides a much more reliable assessment of borrower risk and aids decision either to approve or not approve the loan.
+Higher Loan-to-Income ratios therefore indicate elevated credit risk. :contentReference[oaicite:7]{index=7}
 
-________________________________________
+---
 
+## 📊 Multi-Factor Risk Assessment
 
-<img width="1477" height="562" alt="Screenshot SQL Query Key Insight" src="https://github.com/user-attachments/assets/ded30eb7-ec67-43e7-8a96-0def424c30b6" />
+Combining:
 
-💼 Business Recommendations
+- Credit Score
+- Income
+- Loan Amount
+- Missed Payments
 
-•	Prioritize applicants with strong credit scores during initial screening.
+produces a significantly more reliable assessment than relying on a single metric.
 
-•	Consider employment stability as a major lending criterion.
+This mirrors modern credit risk frameworks used by financial institutions. :contentReference[oaicite:8]{index=8}
 
-•	Introduce additional verification procedures for applicants with lower credit scores.
+---
 
-•	Develop tailored lending products for different income groups.
+# 💼 Business Impact
 
-•	Monitor city-level lending performance to identify emerging credit risks.
-________________________________________
+This analysis helps financial institutions:
 
-📁 Repository Structure
+- Improve lending decisions
+- Reduce default rates
+- Strengthen portfolio quality
+- Increase profitability
+- Improve risk monitoring
+- Enhance regulatory compliance
+- Support strategic credit management
 
-Loan-Risk-Audit-Analysis-SQL/
+---
+
+# 💰 Accounting Perspective
+
+From an accounting perspective, deteriorating credit quality directly affects financial reporting.
+
+## Expected Credit Loss (ECL)
+
+Higher-risk loans require larger impairment provisions under expected credit loss frameworks.
+
+## Balance Sheet
+
+Loan defaults reduce:
+
+- Loan Assets
+- Net Loan Portfolio Value
+
+while increasing:
+
+- Allowance for Credit Losses
+
+This weakens the bank's financial position.
+
+## Income Statement
+
+Loan defaults reduce:
+
+- Interest Income
+
+while increasing:
+
+- Bad Debt Expense
+- Impairment Expense
+
+The combined effect is lower profitability.
+
+## Cash Flow
+
+Poor repayment behaviour reduces operating cash inflows and increases collection costs, negatively affecting liquidity. :contentReference[oaicite:9]{index=9}
+
+---
+
+# 🔍 Audit Perspective
+
+The analysis also supports Internal Audit by enabling auditors to:
+
+- Identify high-risk borrowers
+- Review lending controls
+- Validate impairment provisions
+- Assess compliance with lending policies
+- Evaluate overdue loan monitoring
+- Strengthen internal control systems
+
+This demonstrates how SQL analytics contributes beyond reporting to governance and risk assurance. :contentReference[oaicite:10]{index=10}
+
+---
+
+# 💡 Strategic Recommendations
+
+Based on the analysis:
+
+✔ Strengthen credit approval criteria
+
+✔ Monitor borrowers with high Loan-to-Income ratios
+
+✔ Deploy automated early-warning systems
+
+✔ Increase monitoring of deteriorating credit profiles
+
+✔ Enhance portfolio review processes
+
+✔ Expand future work using predictive machine learning models
+
+These recommendations help lenders reduce default risk while improving portfolio resilience. :contentReference[oaicite:11]{index=11}
+
+---
+
+# 📊 Skills Demonstrated
+
+## SQL
+
+- INNER JOIN
+- Common Table Expressions (CTEs)
+- CASE Statements
+- Aggregate Functions
+- GROUP BY
+- ORDER BY
+- Financial Ratio Analysis
+
+## Banking Analytics
+
+- Credit Risk Assessment
+- Loan Portfolio Analysis
+- Customer Risk Classification
+- Lending Decision Support
+
+## Business Analysis
+
+- Risk Assessment
+- Business Intelligence
+- Executive Reporting
+- Decision Support
+- Data Storytelling
+
+## Accounting & Audit
+
+- Expected Credit Loss (ECL)
+- Financial Statement Analysis
+- Internal Audit Analytics
+- Loan Portfolio Monitoring
+- Risk Governance
+
+---
+
+# 🚀 Future Enhancements
+
+Potential future developments include:
+
+- Probability of Default (PD) Modelling
+- IFRS 9 Expected Credit Loss Modelling
+- Machine Learning Risk Prediction
+- Interactive Power BI Dashboard
+- Automated SQL Stored Procedures
+- Credit Portfolio Stress Testing
+
+---
+
+# 📁 Repository Structure
+
+```text
+Loan-Risk-Audit-Analysis-SQL
 │
-
-├── Dataset/
-
-├── SQL Queries/
-
-├── Queries Screenshots/
-
-├── Report/
-
+├── Dataset
+├── SQL Scripts
+├── Query Results
+├── Project Report
+├── Screenshots
 └── README.md
+```
 
-________________________________________
+---
 
-🚀 Skills Demonstrated
+# 👨‍💼 About the Author
 
-•	SQL Query Writing
+## **Dayo Rex Afariogun**
 
-•	Data Cleaning
+**Business Analyst | Financial Data Analytics | Business Intelligence**
 
-•	Data Exploration
+I specialise in transforming financial and operational data into strategic business insights using SQL, Python, Power BI, and Microsoft Excel. With a strong foundation in Accounting and over 14 years of business leadership experience, I combine technical analytics with commercial understanding to support better lending decisions, risk management, and business performance.
 
-•	Aggregate Functions
+📧 **Email:** dayorex7@gmail.com
 
-•	GROUP BY
+💼 **LinkedIn:** linkedin.com/in/dayo-afariogun
 
-•	CASE Statements
+💻 **GitHub:** github.com/dayo-data-analyst
 
-•	Common Table Expressions (CTEs)
+---
 
-•	Joins
+## ⭐ Thank You for Visiting!
 
-•	Business Intelligence
+If you found this project valuable, feel free to ⭐ **star the repository**, explore my other analytics projects, or connect with me on LinkedIn.
 
-•	Financial Data Analysis
-
-•	Credit Risk Assessment
-
-•	Data Storytelling
-
-________________________________________
-
-👨‍💻 About Me
-
-Dayo Rex Afariogun
-
-Data Analyst with hands-on experience in SQL, Python, Microsoft Power BI, Microsoft Excel, financial and business intelligence reporting. Passionate about transforming raw data into actionable insights that support strategic business decisions. I have B.Sc Accounting.
-
-Connect with Me
-
-•	LinkedIn: https://www.linkedin.com/in/dayo-afariogun 
-
-•	GitHub: https://github.com/dayo-data-analyst
-
-•	Email: dayorex7@gmail.com
-
-_______________________________________
-
-⭐ If you found this project interesting, feel free to star the repository or connect with me on LinkedIn or Email..
-
-________________________________________
-
+🚀 **Turning financial data into actionable business intelligence.**
