@@ -51,7 +51,7 @@ The primary objectives of this project were to:
 - Produce actionable business insights for lending decisions
 - Explain the accounting and audit implications of loan defaults
 
-These objectives were achieved using advanced SQL techniques and financial analysis. :contentReference[oaicite:0]{index=0}
+These objectives were achieved using advanced SQL techniques and financial analysis.
 
 ---
 
